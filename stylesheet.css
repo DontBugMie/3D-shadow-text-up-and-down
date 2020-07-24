@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap'); */
-
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
 /* 
 Fonts i like:
 - Lobster
@@ -38,12 +38,14 @@ body{
     background-color: rgb(247, 198, 205);
     padding: 120px;
     text-align: center;
+    z-index: 1;
 }
 
 .words{
     color:rgb(247, 198, 205);
     font-size: 0; 
     line-height: 1;
+   position: absolute;
 }
 
 .words span{
@@ -52,21 +54,27 @@ body{
     animation: move 5s ease-in-out infinite;
 }
 
-/* Create Animation */
+/* portfolio */
 
-@keyframes move{
-    0%{
-        /* transform:translateY(-33%,0); */
-    }
-    50%{
-        text-shadow: 0 15px 40px rgb(102, 81, 84);
-        /* box-shadow:0 15px 40px rgb(102, 81, 84) ; */
-    }
-    100%{
-        /* transform:translateX(3000%,0); */
-    }
+.words2{
+    font-family: 'Monsieur La Doulaise', cursive;
+    color: white;
+    font-size: .5em;
+    line-height: .5;
+    text-align: center;
+    left: 20%;
+    top:14%;
 }
 
+.words2 span{
+    color: white;
+    font-size: 5em;
+    line-height: .5;
+    animation: move 7s ease-in-out infinite;
+}
+
+
+/* each letter goes up one at a time */
 
 .words span:nth-child(1){
     animation-delay: .1s;
@@ -84,10 +92,40 @@ body{
     animation-delay: 1.5s;
 }  
 
-
-
-/* line */
-
-.line{
-    animation: move 5s ease-in-out infinite;
+.words span:nth-child(5){
+    animation-delay:2s;
 }
+
+.words span:nth-child(6){
+    animation-delay:2.5s;
+}
+
+.words span:nth-child(7){
+    animation-delay:3s;
+}
+
+.words span:nth-child(8){
+    animation-delay:3.5s;
+}
+
+.words span:nth-child(9){
+    animation-delay:4s;
+}
+
+/* Create Animation */
+
+@keyframes move{
+    0%{
+        color:rgb(247, 198, 205);
+    }
+    50%{
+        text-shadow: 0 15px 40px rgb(102, 81, 84);
+        /* color: white; */
+        color: white;
+    }
+    100%{
+        color:rgb(247, 198, 205);
+    }
+}
+
+
