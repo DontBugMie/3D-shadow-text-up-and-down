@@ -60,7 +60,7 @@ body{
     }
     50%{
         text-shadow: 0 15px 40px rgb(102, 81, 84);
-        box-shadow:0 15px 40px rgb(102, 81, 84) ;
+        /* box-shadow:0 15px 40px rgb(102, 81, 84) ; */
     }
     100%{
         /* transform:translateX(3000%,0); */
