@@ -60,6 +60,7 @@ body{
     }
     50%{
         text-shadow: 0 15px 40px rgb(102, 81, 84);
+        box-shadow:0 15px 40px rgb(102, 81, 84) ;
     }
     100%{
         /* transform:translateX(3000%,0); */
@@ -82,3 +83,11 @@ body{
 .words span:nth-child(4){
     animation-delay: 1.5s;
 }  
+
+
+
+/* line */
+
+.line{
+    animation: move 5s ease-in-out infinite;
+}
